@@ -1,0 +1,81 @@
+Instruções R e Rstudio
+
+O R é sensível a letras maiusculas e minusculas, então quando 
+digitar os comandos e der erro, verificar se é por causa disso
+
+Tudo que for sendo criado aparece ao lado em eviroament/workspace
+
+-------------------------------------------------------
+Configurar fonts, cor, etc...
+
+RStudio options are accessible from the Options
+dialog Tools > Options menu (RStudio > Preferences on a Mac) 
+
+---------------------------------------------------------------
+Criar um obejto:
+nome do objeto x
+valor do objeto 7
+x = 7 ou x <- 7
+toda vez q digitar x o programa vai entender como 7
+Tanto faz usar = ou <-
+
+Se quiser mudar o valor de x para 9, basta escrever
+x <- 9 que o programa re-escreve por cima e x passa a valer 9
+
+Nome do objeto não pode ser criado começando por um numero
+por exemplo: 1x
+
+---------------------------------------------------------
+
+Para criar uma variavel categorica, genero por exemplo
+Deve ser escrito entre aspas
+
+xx <- "homem"
+
+Se escreve por exemplo xx <- "1" o 1 será interpretado
+como um caracter não como número
+
+------------------------------------------------------
+
+Para remover algum objeto do espaço de trabalho
+rm(nome do objeto)
+ex.: rm(x)
+
+Para verificar a dimensão do objeto(base) quantas observações e colunas
+dim(nome do objeto)
+
+Para verificar os 6 primeiros dados:
+head(nome do objeto)
+
+Para verificar os ultimos 6 dados:
+tail(nome do objeto)
+--------------------------------------------------
+
+O R executa as operações matematicas gerais
++, -, *, ^, /
+Só digitar 11+14 e precionar enter que ele da resultado
+Também pode fazer depois de criar os objetos
+x+y e precionar enter
+
+Ex.: 
+x <- 11
+y <- 14
+x+y
+24
+
+Para o resultado pode se criar um novo objeto
+z <- x+y
+
+ATALHO: 
+Apertando a setinha do teclado pra cima, o programa vai 
+voltando os comandos digitados anteriormente
+
+Se incluir # na frente do que for digitado, o R
+ignora, serve para fazer anotações sobre o que esta
+fazendo
+
+-------------------------------------------------
+
+Para solicitar ajuda sobre qualquer comando:
+help(nome do comando)
+Ex.: help(read.table)
